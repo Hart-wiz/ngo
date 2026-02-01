@@ -44,7 +44,7 @@ export default function MissionPage() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img src="https://images.unsplash.com/photo-1524062731293-8673abf3013b?auto=format&fit=crop&q=80&w=600" alt="Mission 1" className="rounded-sm shadow-xl" />
+            <img src="https://charlies-travels.com/wp-content/uploads/2024/10/CSR-Ethisch-Verantwoord-Reizen-Lachende-kinderen-Trevor-Cole-header-1200x800-1-1.jpg" alt="Mission 1" className="rounded-sm shadow-xl" />
             <img src="https://images.unsplash.com/photo-1489440543286-a69330151c0b?auto=format&fit=crop&q=80&w=600" alt="Mission 2" className="mt-8 rounded-sm shadow-xl" />
           </div>
         </div>

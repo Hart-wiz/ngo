@@ -27,7 +27,7 @@ export default function ProjectsPage() {
       location: "East Africa",
       impact: "5,000+ People",
       desc: "Installing solar-powered water filtration systems in remote villages to eliminate water-borne diseases and reduce the daily burden on women and children.",
-      img: "https://images.unsplash.com/photo-1594498653385-d5172b532c00?auto=format&fit=crop&q=80&w=800"
+      img: "https://afdb-rwssp.ng/wp-content/uploads/2020/11/AfDB-project-in-Cameroon.jpg"
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ export default function ProjectsPage() {
       location: "Central Africa",
       impact: "800 Children",
       desc: "Deploying converted container classrooms to nomadic communities, ensuring education is consistent even during seasonal migrations.",
-      img: "https://images.unsplash.com/photo-1503919919749-64670fd39454?auto=format&fit=crop&q=80&w=800"
+      img: "https://verysellgroup.com/wp-content/uploads/2025/02/17.png"
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
       location: "West Africa",
       impact: "300 Households",
       desc: "Upcoming initiative to provide livestock and training to widows, creating a self-sustaining source of protein and income.",
-      img: "https://images.unsplash.com/photo-1530513475390-a59615c72095?auto=format&fit=crop&q=80&w=800"
+      img: "https://cdn.wikifarmer.com/images/detailed/2025/02/Non-Conventional%20Feed%20Sources%20for%20Sustainable%20Poultry%20Farming.png"
     },
     {
       id: 5,
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
       location: "Global",
       impact: "2,500 Students",
       desc: "Ongoing financial support for high-performing students from low-income families to transition from primary to secondary education.",
-      img: "https://images.unsplash.com/photo-1523050335392-93851179ae22?auto=format&fit=crop&q=80&w=800"
+      img: "https://i0.wp.com/www.interceptng.com/wp-content/uploads/2021/06/IMG-20210626-WA0007-1.jpg?fit=1077%2C637&ssl=1"
     }
   ];
 

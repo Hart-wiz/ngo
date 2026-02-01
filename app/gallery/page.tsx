@@ -30,9 +30,9 @@ export default function GalleryPage() {
     { id: 2, category: 'HEALTH', title: 'Medical Outreach', img: 'https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&q=80&w=800' },
     { id: 3, category: 'COMMUNITY', title: 'Women Empowerment', img: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80&w=800' },
     { id: 4, category: 'EDUCATION', title: 'School Supplies', img: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800' },
-    { id: 5, category: 'HEALTH', title: 'Clean Water Project', img: 'https://images.unsplash.com/photo-1594498653385-d5172b532c00?auto=format&fit=crop&q=80&w=800' },
+    { id: 5, category: 'HEALTH', title: 'Clean Water Project', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzqAZFGsA0J1GDdP2Ah-dgBz6unp4O9Dd1g&s' },
     { id: 6, category: 'COMMUNITY', title: 'Local Workshops', img: 'https://images.unsplash.com/photo-1489440543286-a69330151c0b?auto=format&fit=crop&q=80&w=800' },
-    { id: 7, category: 'EDUCATION', title: 'Library Opening', img: 'https://images.unsplash.com/photo-1524178232363-1fb28f74b0cd?auto=format&fit=crop&q=80&w=800' },
+    { id: 7, category: 'EDUCATION', title: 'Library Opening', img: 'https://images.squarespace-cdn.com/content/v1/5d4094e74557bc00015636f8/ff5f8761-8688-420a-bc7e-e6761e3a70e9/SA+libraryy.jpeg' },
     { id: 8, category: 'HEALTH', title: 'Vaccination Drive', img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800' },
     { id: 9, category: 'COMMUNITY', title: 'Rural Development', img: 'https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?auto=format&fit=crop&q=80&w=800' },
   ];

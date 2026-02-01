@@ -2,6 +2,7 @@ import React from 'react'
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, ArrowRight } from  'lucide-react';
 
 export default function Footer() {
+    
   return (
  
    <footer className="bg-[#111] text-gray-500 pt-20 pb-10 px-6 md:px-20 text-sm">
@@ -52,7 +53,7 @@ export default function Footer() {
      </div>
    </div>
    <div className="text-center pt-10 border-t border-zinc-900 opacity-30 text-[9px] uppercase tracking-[0.4em]">
-     © 2024 Empowerment Global Foundation. Transparency in every dollar.
+     © {new Date().getFullYear()} Empowerment Global Foundation. Transparency in every dollar.
    </div>
  </footer>
   )

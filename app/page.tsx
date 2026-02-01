@@ -11,6 +11,7 @@ import Hero from '@/components/Hero';
 import CauseCard from '@/components/causeCard';
 import NewsCard from '@/components/NewsCard';
 import HelpIconItem from '../components/HelpIconItem'; 
+import VideoFrame from '@/components/VideoFrame';
 
 interface CauseCardProps {
   image: string;
@@ -36,7 +37,7 @@ const App = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <CauseCard 
-            image="https://images.unsplash.com/photo-1524062731293-8673abf3013b?q=80&w=1000&auto=format&fit=crop"
+            image="https://charlies-travels.com/wp-content/uploads/2024/10/CSR-Ethisch-Verantwoord-Reizen-Lachende-kinderen-Trevor-Cole-header-1200x800-1-1.jpg"
             title="Safe Havens for Orphans"
             desc="Providing nurturing environments and trauma-informed care for abandoned children to grow, heal, and thrive."
             progress={85}
@@ -88,14 +89,8 @@ const App = () => {
               desc="Directly sponsor a child's education or a mother's vocational training to witness the impact of your generosity firsthand." 
             />
           </div>
-          <div className="relative aspect-video bg-gray-200 group cursor-pointer overflow-hidden shadow-2xl rounded-sm">
-             <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop" alt="Video" className="w-full h-full object-cover" />
-             <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                <div className="w-20 h-20 bg-[#F7C51E] rounded-full flex items-center justify-center text-black transform group-hover:scale-110 transition-transform shadow-xl">
-                  <Play fill="black" size={32} />
-                </div>
-             </div>
-             <div className="absolute top-4 left-4 bg-black/60 text-white px-3 py-1 text-xs">Watch our 2024 Impact Report</div>
+          <div className=" bg-zinc-100 flex items-center justify-center">
+                <VideoFrame />
           </div>
         </div>
       </section>
