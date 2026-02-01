@@ -16,7 +16,7 @@ export default function Hero() {
         <button className="bg-[#F7C51E] text-black px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white transition-all shadow-lg">
           Donate Now
         </button>
-        <Link href="/">
+        <Link href="/mission">
         <button className="bg-transparent border-2 border-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">
           Our Impact
         </button>
