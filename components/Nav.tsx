@@ -9,13 +9,8 @@ import {
 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import Link from "next/link"
+import Image from 'next/image';
 
-/**
- * NEXT.JS REAL-WORLD USAGE:
- * In your actual project, uncomment the two lines below:
- * * import Link from 'next/link';
- * import { usePathname } from 'next/navigation';
- */
 
 
 
@@ -39,6 +34,10 @@ interface MobileNavItemProps {
  */
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const phoneNumber = "2347036180749"; 
+  const message = encodeURIComponent("Hello! I'm interested in supporting your NGO.");
+
   
   /**
    * THE "MAGIC" LINE:
@@ -60,8 +59,9 @@ export default function Nav() {
         <div className="flex justify-between items-center max-w-7xl mx-auto h-16 md:h-20">
           
           {/* Logo Branding */}
-          <div className="font-bold italic text-xl text-black">
-            Charity<span className="text-white">.</span>
+          <div className="font-bold italic text-2xl text-black">
+            <Image src="/logo.png" alt="Logo" width={90} height={90} className="inline-block mr-2 mb-1 "/>
+            {/* Nurture <span className="text-white">Rise</span> */}
           </div>
 
           {/* Desktop Navigation */}
@@ -88,9 +88,9 @@ export default function Nav() {
               <Search size={18} className="absolute right-0 text-black/60 cursor-pointer hover:text-black transition-colors" />
             </div>
             
-            <button className="hidden lg:block bg-black text-white text-[10px] font-bold uppercase tracking-widest px-4 py-2 hover:bg-zinc-800 transition-colors shadow-lg">
+            <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="hidden lg:block bg-black text-white text-[10px] font-bold uppercase tracking-widest px-4 py-2 hover:bg-zinc-800 transition-colors shadow-lg">
               Donate
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -122,9 +122,9 @@ export default function Nav() {
             
             {/* Mobile Specific Action */}
             <div className="px-6 py-4">
-               <button className="w-full bg-black text-white py-3 text-xs font-bold uppercase tracking-widest active:scale-95 transition-transform">
+               <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="w-full bg-black text-white py-3 text-xs font-bold uppercase tracking-widest active:scale-95 transition-transform">
                  DONATE
-               </button>
+               </Link>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ export default function MissionPage() {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-800">
    
-      <section className="relative h-[400px] flex items-center bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop')" }}>
+      <section className="relative h-[400px] flex items-center bg-cover bg-center" style={{ backgroundImage: "url('/children.jpeg')" }}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-6 md:px-20 relative z-10 text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">Our <span className="text-[#F7C51E]">Mission</span></h1>
@@ -44,8 +44,8 @@ export default function MissionPage() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img src="https://charlies-travels.com/wp-content/uploads/2024/10/CSR-Ethisch-Verantwoord-Reizen-Lachende-kinderen-Trevor-Cole-header-1200x800-1-1.jpg" alt="Mission 1" className="rounded-sm shadow-xl" />
-            <img src="https://images.unsplash.com/photo-1489440543286-a69330151c0b?auto=format&fit=crop&q=80&w=600" alt="Mission 2" className="mt-8 rounded-sm shadow-xl" />
+            <img src="/girlhealth.jpeg" alt="Mission 1" className="rounded-sm shadow-xl" />
+            <img src="/children.jpeg" alt="Mission 2" className="mt-8 rounded-sm shadow-xl" />
           </div>
         </div>
       </section>

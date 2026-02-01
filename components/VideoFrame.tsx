@@ -32,13 +32,13 @@ const VideoFrame = () => {
         <video 
           ref={videoRef}
           className="w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop"
+          poster="/girlsfund.jpeg"
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
           controls={isPlaying}
         >
           <source 
-            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
+            src="girlchildvid.mp4" 
             type="video/mp4" 
           />
           Your browser does not support the video tag.

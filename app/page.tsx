@@ -12,6 +12,7 @@ import CauseCard from '@/components/causeCard';
 import NewsCard from '@/components/NewsCard';
 import HelpIconItem from '../components/HelpIconItem'; 
 import VideoFrame from '@/components/VideoFrame';
+import Link from 'next/link';
 
 interface CauseCardProps {
   image: string;
@@ -22,6 +23,10 @@ interface CauseCardProps {
   desc: string;
 }
 const App = () => {
+  
+  const phoneNumber = "2347036180749"; 
+  const message = encodeURIComponent("Hello! I'm interested in supporting your NGO.");
+
   return (
     <div className="min-h-screen bg-white font-sans text-gray-800">
       {/* Hero Section */}
@@ -37,28 +42,28 @@ const App = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <CauseCard 
-            image="https://charlies-travels.com/wp-content/uploads/2024/10/CSR-Ethisch-Verantwoord-Reizen-Lachende-kinderen-Trevor-Cole-header-1200x800-1-1.jpg"
-            title="Safe Havens for Orphans"
-            desc="Providing nurturing environments and trauma-informed care for abandoned children to grow, heal, and thrive."
-            progress={85}
-            raised="$95,400"
-            goal="$112,000"
+            image="stdgirls.jpeg"
+            title="Girl Child Support and Orphan Care consortium" 
+            desc="Providing support to women and children through education, healthcare, and empowerment programs."
+            progress={10}
+            raised="₦195,400"
+            goal="₦6,500,000"
           />
           <CauseCard 
-            image="https://images.unsplash.com/photo-1489440543286-a69330151c0b?q=80&w=1000&auto=format&fit=crop"
+            image="/girlsfund.jpeg"
             title="Girls' Education Fund"
             desc="Breaking barriers by providing scholarships, school supplies, and safe transport for young girls to finish secondary school."
-            progress={62}
-            raised="$42,800"
-            goal="$68,000"
+            progress={6}
+            raised="₦42,800"
+            goal="₦10,000,000"
           />
           <CauseCard 
-            image="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1000&auto=format&fit=crop"
-            title="Maternal Health Support"
-            desc="Ensuring safe delivery and postnatal care for mothers in rural areas through community-led health clinics."
-            progress={48}
-            raised="$31,200"
-            goal="$65,000"
+            image="/girlhealth.jpeg"
+            title="Girl and children Health Support"
+            desc="Ensuring safe good girl health and well-being through access to medical care, nutrition, and hygiene education."
+            progress={2}
+            raised="₦31,200"
+            goal="₦6,000,000"
           />
         </div>
       </section>
@@ -96,16 +101,16 @@ const App = () => {
       </section>
 
       {/* Volunteer CTA */}
-      <section className="relative py-32 bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=2070&auto=format&fit=crop')" }}>
+      <section className="relative py-32 bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('/girlsfund.jpeg')" }}>
         <div className="absolute inset-0 bg-white/60"></div>
         <div className="container mx-auto px-4 md:px-20 relative z-10">
           <h2 className="text-6xl font-light text-black mb-6">Your Time <span className="font-bold">Saves Lives</span></h2>
           <p className="max-w-xl text-gray-800 text-lg mb-10 leading-relaxed font-medium">
             We are looking for passionate individuals to join our field teams and local chapters. Whether you're a doctor, teacher, or just have a heart to help, we have a place for you.
           </p>
-          <button className="bg-black text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#F7C51E] hover:text-black transition-all shadow-xl">
+          <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="bg-black text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#F7C51E] hover:text-black transition-all shadow-xl">
             Start Volunteering
-          </button>
+          </Link>
         </div>
         <div className="absolute right-0 bottom-0 opacity-10 text-9xl font-black text-white pointer-events-none select-none">
           EMPOWER
@@ -119,14 +124,14 @@ const App = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NewsCard 
-            image="https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?q=80&w=1000&auto=format&fit=crop"
-            title="The First Graduate: Mary's Journey to Medical School"
+            image="/girlchildedu.jpeg"
+            title="!0th conference and awards for the Girl child campaign"
             desc="After 10 years in our scholarship program, Mary becomes the first woman in her village to attend university."
             date="15 JAN 2024"
           />
           <NewsCard 
-            image="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop"
-            title="New Vocational Center Opens in Nairobi"
+            image="/vocationcenter.jpeg"
+            title="New Vocational Center Opens in Aba, Abia state Nigeria"
             desc="Our latest hub provides training in digital literacy and sustainable agriculture for over 200 local mothers."
             date="02 JAN 2024"
           />
@@ -140,7 +145,7 @@ const App = () => {
       </section>
 
       {/* Testimonial Section */}
-      <section className="relative py-32 text-center text-white bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop')" }}>
+      <section className="relative py-32 text-center text-white bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/girlchildedu.jpeg')" }}>
         <div className="absolute inset-0 bg-black/80"></div>
         <div className="container mx-auto px-4 relative z-10 max-w-3xl">
           <h2 className="text-2xl font-light uppercase tracking-[0.3em] mb-16 text-[#F7C51E]">

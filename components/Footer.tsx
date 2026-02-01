@@ -1,5 +1,6 @@
 import React from 'react'
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, ArrowRight } from  'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
     
@@ -8,7 +9,8 @@ export default function Footer() {
    <footer className="bg-[#111] text-gray-500 pt-20 pb-10 px-6 md:px-20 text-sm">
    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
      <div>
-       <h3 className="text-white text-3xl font-bold italic mb-8">Charity<span className="text-[#F7C51E]">.</span></h3>
+
+       <h3 className="text-white text-3xl font-bold italic mb-8">     <Image src="/logo.png" alt="Logo" width={90} height={90} className="inline-block mr-2 mb-1"/>Nurture<span className="text-[#F7C51E]"> Rise</span></h3>
        <p className="mb-8 leading-relaxed">
          Implementing field-first solutions for the empowerment of women and protection of children worldwide since 2014.
        </p>
