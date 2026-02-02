@@ -125,7 +125,7 @@ const App = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NewsCard 
             image="/girlchildedu.jpeg"
-            title="!0th conference and awards for the Girl child campaign"
+            title="Conference and Awards for the Girl child campaign"
             desc="After 10 years in our scholarship program, Mary becomes the first woman in her village to attend university."
             date="15 JAN 2024"
           />
@@ -137,7 +137,7 @@ const App = () => {
           />
           <NewsCard 
             image="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=1000&auto=format&fit=crop"
-            title="Global Giving Day Results: Over $1M Raised"
+            title="Nigerian Global Giving Day Results"
             desc="A massive thank you to our community for helping us reach our annual goal for clean water initiatives."
             date="20 DEC 2023"
           />

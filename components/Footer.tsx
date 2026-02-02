@@ -25,15 +25,15 @@ export default function Footer() {
        <ul className="space-y-4 text-xs">
          <li className="flex gap-3 hover:text-white transition-colors cursor-pointer">
            <ArrowRight size={14} className="text-[#F7C51E]" /> 
-           Clean Water Initiative - East Africa
+           Clean Water Initiative - osisioma LGA, Abia State, Nigeria
          </li>
          <li className="flex gap-3 hover:text-white transition-colors cursor-pointer">
            <ArrowRight size={14} className="text-[#F7C51E]" /> 
-           Primary School Containers - Central Africa
+           Primary School Containers - abia state, Nigeria
          </li>
          <li className="flex gap-3 hover:text-white transition-colors cursor-pointer">
            <ArrowRight size={14} className="text-[#F7C51E]" /> 
-           Digital Literacy Hub - Global
+           Digital Literacy Hub - Aba, Abia state, Nigeria
          </li>
        </ul>
      </div>
@@ -55,7 +55,7 @@ export default function Footer() {
      </div>
    </div>
    <div className="text-center pt-10 border-t border-zinc-900 opacity-30 text-[9px] uppercase tracking-[0.4em]">
-     © {new Date().getFullYear()} Empowerment Global Foundation. Transparency in every dollar.
+     © {new Date().getFullYear()} Nurture Rise Initiative. Humanity in every way.
    </div>
  </footer>
   )
