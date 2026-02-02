@@ -45,7 +45,7 @@ const App = () => {
             image="stdgirls.jpeg"
             title="Girl Child Support and Orphan Care consortium" 
             desc="Providing support to women and children through education, healthcare, and empowerment programs."
-            progress={10}
+            progress={(195000/6500000)*100}
             raised="₦195,400"
             goal="₦6,500,000"
           />
@@ -53,15 +53,15 @@ const App = () => {
             image="/girlsfund.jpeg"
             title="Girls' Education Fund"
             desc="Breaking barriers by providing scholarships, school supplies, and safe transport for young girls to finish secondary school."
-            progress={6}
-            raised="₦42,800"
+            progress={(250000/10000000)*100}
+            raised="₦250,000"
             goal="₦10,000,000"
           />
           <CauseCard 
             image="/girlhealth.jpeg"
             title="Girl and children Health Support"
             desc="Ensuring safe good girl health and well-being through access to medical care, nutrition, and hygiene education."
-            progress={2}
+            progress={(31200/6000000)*100}
             raised="₦31,200"
             goal="₦6,000,000"
           />

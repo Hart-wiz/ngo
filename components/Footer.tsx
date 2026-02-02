@@ -15,9 +15,9 @@ export default function Footer() {
          Implementing field-first solutions for the empowerment of women and protection of children worldwide since 2014.
        </p>
        <div className="space-y-4">
-         <FooterContact Icon={MapPin} text="124 Global Avenue, NY 10001" />
-         <FooterContact Icon={Phone} text="+1 (800) 456-7890" />
-         <FooterContact Icon={Mail} text="projects@ourcharity.org" />
+         <FooterContact Icon={MapPin} text=" Plot 40 Okigwe Rd Aba, Abia State, Nigeria" />
+         <FooterContact Icon={Phone} text="+234 703 618 0749" />
+         <FooterContact Icon={Mail} text="contact@nutureriseinitiative.com.ng" />
        </div>
      </div>
      <div>
