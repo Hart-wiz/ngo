@@ -5,7 +5,7 @@ export default function Hero() {
     const phoneNumber = "2347036180749"; 
     const message = encodeURIComponent("Hello! I'm interested in supporting your NGO.");
   return (
-    <div><section className="relative h-[85vh] flex items-center bg-cover bg-center" style={{ backgroundImage: "url('/children.jpeg')" }}>
+    <div><section className="relative h-[85vh] flex items-center bg-cover bg-center" style={{ backgroundImage: "url('/girlsfund.jpeg')" }}>
     <div className="absolute inset-0 bg-black/40"></div>
     <div className="container mx-auto px-4  relative z-10 text-white max-w-3xl">
       <span className="bg-[#F7C51E] text-black px-3 py-1 text-xs font-bold uppercase mb-4 inline-block tracking-widest">Featured Mission</span>
