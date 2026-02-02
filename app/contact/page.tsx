@@ -13,6 +13,7 @@ import {
   Instagram,
 
 } from 'lucide-react';
+import ContactForm from '@/components/ContactForm';
 
 /**
  * Contact Page
@@ -56,12 +57,14 @@ export default function ContactPage() {
           
           {/* Left Side: Contact Form */}
           <div>
-            <div className="mb-10">
-              <h2 className="text-3xl font-bold mb-4">Send us a Message</h2>
-              <p className="text-gray-500">Fields marked with an asterisk (*) are required.</p>
-            </div>
+            
+  
 
-            {formStatus === 'SUCCESS' ? (
+
+            <ContactForm />
+         
+
+            {/* {formStatus === 'SUCCESS' ? (
               <div className="bg-green-50 border border-green-200 p-10 text-center rounded-sm">
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
                   <Send size={28} />
@@ -110,7 +113,7 @@ export default function ContactPage() {
                   <Send size={14} />
                 </button>
               </form>
-            )}
+            )} */}
           </div>
 
           {/* Right Side: Contact Info */}
