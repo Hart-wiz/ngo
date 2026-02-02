@@ -10,6 +10,8 @@ import {
   Globe
 } from 'lucide-react';
 
+import ProjectCard from '@/components/ProjectCard';
+
 /**
  * Projects Page
  * Showcases specific NGO initiatives with status filtering and impact metrics.
@@ -25,7 +27,7 @@ export default function ProjectsPage() {
       category: "HEALTH",
       status: "ONGOING",
       location: "Nigeria",
-      impact: "5,000+ People",
+      impact: "500+ People",
       desc: "Installing solar-powered water filtration systems in remote villages to eliminate water-borne diseases and reduce the daily burden on women and children.",
       img: "https://afdb-rwssp.ng/wp-content/uploads/2020/11/AfDB-project-in-Cameroon.jpg"
     },
@@ -35,7 +37,7 @@ export default function ProjectsPage() {
       category: "EMPOWERMENT",
       status: "COMPLETED",
       location: "Nigeria",
-      impact: "1,200 Women",
+      impact: "400+ Women",
       desc: "Providing basic computing and internet skills to help mothers manage small businesses and access global marketplaces for their crafts.",
       img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800"
     },
@@ -54,8 +56,8 @@ export default function ProjectsPage() {
       title: "Sustainable Poultry Farming",
       category: "EMPOWERMENT",
       status: "FUTURE",
-      location: "West Africa",
-      impact: "300 Households",
+      location: "Nigeria",
+      impact: "90 Households",
       desc: "Upcoming initiative to provide livestock and training to widows, creating a self-sustaining source of protein and income.",
       img: "https://cdn.wikifarmer.com/images/detailed/2025/02/Non-Conventional%20Feed%20Sources%20for%20Sustainable%20Poultry%20Farming.png"
     },
@@ -65,7 +67,7 @@ export default function ProjectsPage() {
       category: "HEALTH",
       status: "COMPLETED",
       location: "Nigeria",
-      impact: "10,000+ Residents",
+      impact: "1000+ Residents",
       desc: "Construction of five satellite clinics focused on maternal health and infant nutrition in underserved urban slums.",
       img: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&q=80&w=800"
     },
@@ -75,7 +77,7 @@ export default function ProjectsPage() {
       category: "EDUCATION",
       status: "ONGOING",
       location: "Nigeria",
-      impact: "1500 Students",
+      impact: "500+ Students",
       desc: "Ongoing financial support for high-performing students from low-income families to transition from primary to secondary education.",
       img: "https://i0.wp.com/www.interceptng.com/wp-content/uploads/2021/06/IMG-20210626-WA0007-1.jpg?fit=1077%2C637&ssl=1"
     }
@@ -147,10 +149,10 @@ export default function ProjectsPage() {
             <div className="w-20 h-1 bg-[#F7C51E] mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
-            <StatItem icon={Globe} count="14" label="Countries Active" />
-            <StatItem icon={Users} count="850k" label="Total Beneficiaries" />
-            <StatItem icon={CheckCircle2} count="124" label="Projects Finished" />
-            <StatItem icon={Clock} count="22" label="Upcoming Missions" />
+            <StatItem icon={Globe} count="16" label="States Active" />
+            <StatItem icon={Users} count="2k" label="Total Beneficiaries" />
+            <StatItem icon={CheckCircle2} count="21" label="Projects Finished" />
+            <StatItem icon={Clock} count="12" label="Upcoming Missions" />
           </div>
         </div>
       </section>
@@ -178,49 +180,10 @@ export default function ProjectsPage() {
   );
 }
 
-/**
- * Project Components
- */
 
 
-function ProjectCard({ project }: { project: { id: number; title: string; category: string; status: string; location: string; impact: string; desc: string; img: string; } }) {
-  const statusColors: { [key: string]: string } = {
-    ONGOING: 'bg-blue-600',
-    COMPLETED: 'bg-green-600',
-    FUTURE: 'bg-[#F7C51E] text-black'
-  };
 
-  return (
-    <div className="bg-white border border-gray-100 flex flex-col md:flex-row group hover:shadow-2xl transition-all duration-500 overflow-hidden">
-      <div className="md:w-2/5 relative overflow-hidden h-64 md:h-auto">
-        <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-        <div className={`absolute top-4 left-4 px-3 py-1 text-[9px] font-bold uppercase tracking-widest shadow-lg ${statusColors[project.status] || 'bg-black text-white'}`}>
-          {project.status}
-        </div>
-      </div>
-      <div className="md:w-3/5 p-8 flex flex-col">
-        <div className="text-[#F7C51E] text-[10px] font-bold tracking-[0.2em] mb-2">{project.category}</div>
-        <h3 className="text-2xl font-bold mb-4 group-hover:text-[#F7C51E] transition-colors">{project.title}</h3>
-        <p className="text-sm text-gray-500 mb-6 leading-relaxed flex-grow">{project.desc}</p>
-        
-        <div className="grid grid-cols-2 gap-4 border-t border-gray-50 pt-6 mt-auto">
-          <div className="flex items-center gap-2">
-            <MapPin size={14} className="text-gray-400" />
-            <span className="text-[11px] font-bold text-gray-700 uppercase tracking-tight">{project.location}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Users size={14} className="text-gray-400" />
-            <span className="text-[11px] font-bold text-gray-700 uppercase tracking-tight">{project.impact}</span>
-          </div>
-        </div>
-        
-        <button className="mt-8 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest hover:gap-4 transition-all">
-          View Project Details <ArrowRight size={14} className="text-[#F7C51E]" />
-        </button>
-      </div>
-    </div>
-  );
-}
+
 
 function StatItem({ icon: Icon, count, label }: { icon: React.ComponentType<{ size?: number; className?: string }>; count: string; label: string; }) {
   return (

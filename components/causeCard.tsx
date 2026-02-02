@@ -32,7 +32,7 @@ const CauseCard = ({ image, title, progress, raised, goal, desc }:CauseCardProps
         <div className="text-xs mb-8 text-gray-600 font-bold uppercase tracking-widest border-y border-gray-50 py-3">
           Raised : <span className="text-[#F7C51E] text-lg">{raised}</span> <span className="mx-2 opacity-20">/</span> {goal}
         </div>
-        <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="w-full border-2 border-gray-200 py-3 text-xs font-bold uppercase tracking-widest hover:bg-[#f7c41ea4] bg-[#F7C51E] hover:border-[#F7C51E] hover:text-black transition-all px-5">
+        <Link href={`https://sandbox.flutterwave.com/donate/5nrjjgxns6gp`} target="_blank" rel="noopener noreferrer" className="w-full border-2 border-gray-200 py-3 text-xs font-bold uppercase tracking-widest hover:bg-[#f7c41ea4] bg-[#F7C51E] hover:border-[#F7C51E] hover:text-black transition-all px-5">
           Support This Cause
         </Link>
       </div>

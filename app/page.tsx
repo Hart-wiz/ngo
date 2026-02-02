@@ -108,7 +108,7 @@ const App = () => {
           <p className="max-w-xl text-gray-800 text-lg mb-10 leading-relaxed font-medium">
             We are looking for passionate individuals to join our field teams and local chapters. Whether you're a doctor, teacher, or just have a heart to help, we have a place for you.
           </p>
-          <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="bg-black text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#F7C51E] hover:text-black transition-all shadow-xl">
+          <Link href={"/contact#form"} target="_blank" rel="noopener noreferrer" className="bg-black text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#F7C51E] hover:text-black transition-all shadow-xl">
             Start Volunteering
           </Link>
         </div>
@@ -154,10 +154,7 @@ const App = () => {
           <p className="italic text-2xl mb-10 opacity-90 leading-relaxed font-serif">
             "Seeing the smile on a child's face when they receive their first school kit is a profound reminder of why we do what we do. This organization doesn't just give aid; they build dignity."
           </p>
-          <div className="mb-4">
-             <h4 className="text-2xl font-bold uppercase tracking-widest">Sarah Jenkins</h4>
-             <p className="text-sm opacity-60 text-[#F7C51E] font-bold">Field Director, East Africa Operations</p>
-          </div>
+          
         </div>
       </section>
 

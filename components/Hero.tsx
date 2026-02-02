@@ -15,7 +15,7 @@ export default function Hero() {
       </p>
       <div className="flex gap-4">
         
-        <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="bg-[#F7C51E] text-black px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white transition-all shadow-lg">
+        <Link href={`https://sandbox.flutterwave.com/donate/5nrjjgxns6gp`} target="_blank" rel="noopener noreferrer" className="bg-[#F7C51E] text-black px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white transition-all shadow-lg">
           Donate Now
         </Link>
         <Link href="/mission">

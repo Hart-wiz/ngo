@@ -16,7 +16,7 @@ export default function Header() {
           <Linkedin size={16} className="cursor-pointer hover:text-[#F7C51E] transition-colors" />
           <Instagram size={16} className="cursor-pointer hover:text-[#F7C51E] transition-colors" />
         </div>
-        <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="bg-transparent border border-gray-500 px-4 py-1 text-xs uppercase tracking-widest hover:bg-[#F7C51E] hover:border-[#F7C51E] transition-all">
+        <Link href={"/contact#form"} target="_blank" rel="noopener noreferrer" className="bg-transparent border border-gray-500 px-4 py-1 text-xs uppercase tracking-widest hover:bg-[#F7C51E] hover:border-[#F7C51E] transition-all">
           Become Volunteer
         </Link>
       </div>

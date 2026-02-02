@@ -14,6 +14,7 @@ import {
 
 } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
+import Link from 'next/link';
 
 /**
  * Contact Page
@@ -56,7 +57,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           
           {/* Left Side: Contact Form */}
-          <div>
+          <div id='form'>
             
   
 
@@ -117,11 +118,11 @@ export default function ContactPage() {
           </div>
 
           {/* Right Side: Contact Info */}
-          <div className="lg:pl-10">
+          <div className="lg:pl-10 border-gray-50 border-6">
             <div className="space-y-12">
               
               {/* Info Card 1 */}
-              <div className="flex gap-6">
+              <div className="flex gap-6 ">
                 <div className="w-14 h-14 bg-[#F7C51E] shrink-0 flex items-center justify-center">
                   <MapPin size={24} className="text-black" />
                 </div>
@@ -220,9 +221,9 @@ export default function ContactPage() {
             <h2 className="text-3xl font-bold mb-2">Become a Field Partner</h2>
             <p className="text-black/70 font-medium">Join our network of organizations making a difference on the ground.</p>
           </div>
-          <button className="bg-black text-white px-10 py-4 font-bold uppercase tracking-widest text-xs whitespace-nowrap hover:bg-white hover:text-black transition-all shadow-2xl">
+          <Link href={"#form"}  target="_blank" rel="noopener noreferrer"  className="bg-black text-white px-10 py-4 font-bold uppercase tracking-widest text-xs whitespace-nowrap hover:bg-white hover:text-black transition-all shadow-2xl">
             Partner Registration
-          </button>
+          </Link>
         </div>
       </section>
     </div>

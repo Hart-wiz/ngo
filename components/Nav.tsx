@@ -122,7 +122,7 @@ export default function Nav() {
             
             {/* Mobile Specific Action */}
             <div className="px-6 py-4">
-               <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="w-full bg-black text-white py-3 px-4 text-xs font-bold uppercase tracking-widest active:scale-95 transition-transform">
+               <Link href={`https://sandbox.flutterwave.com/donate/5nrjjgxns6gp`} target="_blank" rel="noopener noreferrer" className="w-full bg-black text-white py-3 px-4 text-xs font-bold uppercase tracking-widest active:scale-95 transition-transform">
                  DONATE
                </Link>
             </div>

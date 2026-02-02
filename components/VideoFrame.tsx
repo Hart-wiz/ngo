@@ -61,7 +61,7 @@ const VideoFrame = () => {
 
       {/* Component Footer */}
       <div className="text-center pt-10 border-t border-zinc-300 mt-8 text-zinc-500 text-[9px] uppercase tracking-[0.4em]">
-        © {currentYear} Empowerment Global Foundation. Transparency in every dollar.
+        © {currentYear} Nurture Rise Initiative. Humanity in Every Way.
       </div>
     </div>
   );
