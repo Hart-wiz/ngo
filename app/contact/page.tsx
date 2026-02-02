@@ -190,18 +190,25 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section Placeholder */}
-      <section className="h-[450px] bg-gray-100 relative grayscale hover:grayscale-0 transition-all duration-700">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#F7C51E] rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce">
-              <MapPin size={32} className="text-black" />
-            </div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-400">[ Interactive Map Integration ]</p>
-          </div>
-        </div>
-        {/* Visual Map Texture */}
-        <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/carbon-fibre.png')" }}></div>
-      </section>
+      <section className="h-[450px] bg-gray-100 relative grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden">
+  <iframe
+    width="100%"
+    height="100%"
+    frameBorder="0"
+    scrolling="no"
+
+    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Plot%2040%20Okigwe%20Rd%20Aba,%20Abia%20State,%20Nigeria+(Nurture%20Rise%20Initiative)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    className="absolute inset-0"
+  ></iframe>
+  
+  {/* Optional Overlay to keep your text/icon visible until hover */}
+  <div className="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity duration-500">
+    <div className="text-center bg-white/80 p-6 rounded-lg shadow-xl">
+       <MapPin size={32} className="text-[#F7C51E] mx-auto animate-bounce" />
+       <p className="text-xs font-bold uppercase tracking-widest text-gray-800">Find Us Here</p>
+    </div>
+  </div>
+</section>
 
       {/* Partnership CTA */}
       <section className="bg-[#F7C51E] py-20 px-6 md:px-20 text-center">
