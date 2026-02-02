@@ -125,8 +125,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-2 uppercase tracking-tight">Main Headquarters</h3>
                   <p className="text-gray-500 leading-relaxed">
-                    124 Global Avenue, Suite 500<br />
-                    New York, NY 10001, USA
+                  Plot 40 Okigwe Rd Aba<br />
+                    Abia State, Nigeria
                   </p>
                 </div>
               </div>
@@ -139,8 +139,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-2 uppercase tracking-tight">Phone Support</h3>
                   <p className="text-gray-500 leading-relaxed">
-                    Main Office: +1 (800) 456-7890<br />
-                    International: +1 (212) 555-0123
+                    Main Office: +234 703 618 0749<br />
+                   
                   </p>
                 </div>
               </div>
@@ -153,8 +153,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-2 uppercase tracking-tight">Email Addresses</h3>
                   <p className="text-gray-500 leading-relaxed">
-                    General: info@ourcharity.org<br />
-                    Donations: support@ourcharity.org
+             
+                   contact@nutureriseinitiative.com.ng<br />
                   </p>
                 </div>
               </div>

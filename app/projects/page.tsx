@@ -24,7 +24,7 @@ export default function ProjectsPage() {
       title: "Rural Clean Water Initiative",
       category: "HEALTH",
       status: "ONGOING",
-      location: "East Africa",
+      location: "Nigeria",
       impact: "5,000+ People",
       desc: "Installing solar-powered water filtration systems in remote villages to eliminate water-borne diseases and reduce the daily burden on women and children.",
       img: "https://afdb-rwssp.ng/wp-content/uploads/2020/11/AfDB-project-in-Cameroon.jpg"
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
       title: "Digital Literacy for Mothers",
       category: "EMPOWERMENT",
       status: "COMPLETED",
-      location: "Southeast Asia",
+      location: "Nigeria",
       impact: "1,200 Women",
       desc: "Providing basic computing and internet skills to help mothers manage small businesses and access global marketplaces for their crafts.",
       img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800"
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
       title: "Mobile Primary Schooling",
       category: "EDUCATION",
       status: "ONGOING",
-      location: "Central Africa",
+      location: "West Africa",
       impact: "800 Children",
       desc: "Deploying converted container classrooms to nomadic communities, ensuring education is consistent even during seasonal migrations.",
       img: "https://verysellgroup.com/wp-content/uploads/2025/02/17.png"
@@ -64,7 +64,7 @@ export default function ProjectsPage() {
       title: "Community Health Hubs",
       category: "HEALTH",
       status: "COMPLETED",
-      location: "South Asia",
+      location: "Nigeria",
       impact: "10,000+ Residents",
       desc: "Construction of five satellite clinics focused on maternal health and infant nutrition in underserved urban slums.",
       img: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&q=80&w=800"
@@ -74,8 +74,8 @@ export default function ProjectsPage() {
       title: "Secondary School Scholarships",
       category: "EDUCATION",
       status: "ONGOING",
-      location: "Global",
-      impact: "2,500 Students",
+      location: "Nigeria",
+      impact: "1500 Students",
       desc: "Ongoing financial support for high-performing students from low-income families to transition from primary to secondary education.",
       img: "https://i0.wp.com/www.interceptng.com/wp-content/uploads/2021/06/IMG-20210626-WA0007-1.jpg?fit=1077%2C637&ssl=1"
     }
@@ -92,7 +92,7 @@ export default function ProjectsPage() {
     
 
       {/* Hero Section */}
-      <section className="relative h-[450px] flex items-center bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=2070')" }}>
+      <section className="relative h-[450px] flex items-center bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('/girlsfund.jpeg')" }}>
         <div className="absolute inset-0 bg-black/75"></div>
         <div className="container mx-auto px-6 md:px-20 relative z-10 text-white">
           <span className="text-[#F7C51E] font-bold uppercase tracking-[0.4em] text-xs mb-4 block">Groundwork for Change</span>

@@ -26,15 +26,15 @@ export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState('ALL');
 
   const galleryItems = [
-    { id: 1, category: 'EDUCATION', title: 'Classroom Support', img: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800' },
+    { id: 1, category: 'EDUCATION', title: 'Classroom Support', img: '/girlchildedu.jpeg' },
     { id: 2, category: 'HEALTH', title: 'Medical Outreach', img: 'https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&q=80&w=800' },
     { id: 3, category: 'COMMUNITY', title: 'Women Empowerment', img: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80&w=800' },
-    { id: 4, category: 'EDUCATION', title: 'School Supplies', img: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800' },
-    { id: 5, category: 'HEALTH', title: 'Clean Water Project', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzqAZFGsA0J1GDdP2Ah-dgBz6unp4O9Dd1g&s' },
-    { id: 6, category: 'COMMUNITY', title: 'Local Workshops', img: 'https://images.unsplash.com/photo-1489440543286-a69330151c0b?auto=format&fit=crop&q=80&w=800' },
+    { id: 4, category: 'EDUCATION', title: 'School Supplies', img: '/vocationcenter.jpeg' },
+    { id: 5, category: 'HEALTH', title: 'Clean Water Project', img: '/children.jpeg' },
+    { id: 6, category: 'COMMUNITY', title: 'Local Workshops', img: '/girlsfund.jpeg' },
     { id: 7, category: 'EDUCATION', title: 'Library Opening', img: 'https://images.squarespace-cdn.com/content/v1/5d4094e74557bc00015636f8/ff5f8761-8688-420a-bc7e-e6761e3a70e9/SA+libraryy.jpeg' },
-    { id: 8, category: 'HEALTH', title: 'Vaccination Drive', img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800' },
-    { id: 9, category: 'COMMUNITY', title: 'Rural Development', img: 'https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?auto=format&fit=crop&q=80&w=800' },
+    { id: 8, category: 'HEALTH', title: 'Vaccination Drive', img: '/girlhealth.jpeg' },
+    { id: 9, category: 'COMMUNITY', title: 'Rural Development', img: '/stdgirls.jpeg' },
   ];
 
   const filters = ['ALL', 'EDUCATION', 'HEALTH', 'COMMUNITY'];
@@ -49,7 +49,7 @@ export default function GalleryPage() {
       
 
       {/* Hero Section */}
-      <section className="relative h-[350px] flex items-center bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2070')" }}>
+      <section className="relative h-[350px] flex items-center bg-cover bg-center" style={{ backgroundImage: "url('/vocationcenter.jpeg')" }}>
         <div className="absolute inset-0 bg-black/70"></div>
         <div className="container mx-auto px-6 md:px-20 relative z-10 text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">Our <span className="text-[#F7C51E]">Gallery</span></h1>
