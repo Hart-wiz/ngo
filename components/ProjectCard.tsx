@@ -1,24 +1,24 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, {  useState} from 'react';
 import { 
   MapPin,
   Users,
-  CheckCircle2,
-  Clock,
   ArrowRight,
-  Globe
 } from 'lucide-react';
 
 
 
 
-function ProjectCard({ project }: { project: { id: number; title: string; category: string; status: string; location: string; impact: string; desc: string; img: string; } }) {
+
+
+function ProjectCard({ project, onViewDetails }: { project: { id: number; title: string; category: string; status: string; location: string; impact: string; desc: string; img: string; },onViewDetails: (project: any) => void }) {
     const statusColors: { [key: string]: string } = {
       ONGOING: 'bg-blue-600',
       COMPLETED: 'bg-green-600',
       FUTURE: 'bg-[#F7C51E] text-black'
     };
+
   
     return (
       <div className="bg-white border border-gray-100 flex flex-col md:flex-row group hover:shadow-2xl transition-all duration-500 overflow-hidden">
@@ -44,10 +44,14 @@ function ProjectCard({ project }: { project: { id: number; title: string; catego
             </div>
           </div>
           
-          <button className="mt-8 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest hover:gap-4 transition-all">
-            View Project Details <ArrowRight size={14} className="text-[#F7C51E]" />
-          </button>
+          <button 
+          onClick={() => onViewDetails(project)}
+          className="mt-8 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest hover:gap-4 transition-all"
+        >
+          View Project Details <ArrowRight size={14} className="text-[#F7C51E]" />
+        </button>
         </div>
+       
       </div>
     );
   }
